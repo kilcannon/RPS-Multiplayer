@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<link rel="stylesheet" href="assets/css/reset.css">	
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="assets/css/style.css">
+
+  <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+
+	<meta charset="UTF-8">
+	<title>RPS Multiplayer</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="assets/js/logic.js"></script>
+</head>
+
+<body>
+	
+	<div class="jumbotron">
+	  <h1 class="display-4">Rock, Paper, and Scissors</h1>
+	  <p class="lead">Multiplayer version of the game leveraging Firebase.</p>
+	</div>
+
+	<div id="player-call" class="row">
+		<div id="gameStart">
+			<form class="form-username">
+		  		<input type="text" name="username" id="username" placeholder="Enter Username">
+		  		<input type="submit" value="Start" id="start">
+			</form>
+		</div>
+	</div>
+	
+  <br>
+	
+  <div id="turn-sign" class ="row">
+		
+	</div>
+	
+  <br>
+
+	<div id="container" class="row">
+		<div id="player-one" class="col-md-3">
+			<h3> Find your weapons here! </h3>
+		</div>
+
+		<div id="battle-space" class="col-md-3">
+			<h2> Battle Arena </h2>
+		</div>
+
+		<div id="player-two" class="col-md-3">
+			<h3> Your opponent is: </h3>
+		</div>
+  </div>
+
+  <div id="game-stats" class="row">
+  	Game Stats
+  </div>
+
+  <div id="chat-container" class="row">
+		<div id="chat-box" class="col-md-6">
+		</div>
+		<form>
+	  		<input type="text" name="chatbox" id="message" placeholder="Enter Message">
+	  		<input type="submit" value="Send" id="send-message">
+		</form>
+	</div>
+
+
+	
+	
+</body>
+</html>

@@ -1,0 +1,96 @@
+body {
+	position: relative;
+	height: 100%;
+}
+
+#player-call {
+	margin: auto;
+	width: 600px;
+	height: 25px;
+}
+
+#turn-sign {
+	margin: auto;
+	width: 600px;
+	height: 75px;
+	font-size: 16px;
+	line-height: 70px;
+}
+
+#container {
+	margin: auto;
+	width: 640px;
+	height: 250px;
+}
+
+#player-one {
+	margin: auto;
+	width: 200px;
+	height: 200px;
+	border-right: solid;
+	border-color: lightgrey;
+	margin-right: 20px;
+}
+
+#battle-space {
+	margin: auto;
+	text-align: center;
+	width: 200px;
+	height: 200px;
+	margin-right: 20px;
+}
+
+#player-two {
+	margin: auto;
+	width: 200px;
+	height: 200px;
+	border-left: solid;
+	border-color: lightgrey;
+}
+
+#chat-container {
+	margin: auto;
+	width: 600px;
+}
+
+#chat-box {
+	margin: auto;
+	width: 600px;
+	height: 150px;
+	overflow-y: scroll;
+	border-style: solid;
+	border-color: lightgrey;
+	margin-bottom: 5px;
+}
+
+#game-stats {
+	margin: auto;
+	width: 600px;
+	height: 75px;
+	font-size: 20px;
+	border-style: dotted;
+	border-color: lightgrey;
+	margin-bottom: 40px;
+}
+
+#message {
+	width: 400px;
+	margin-bottom: 25px;
+}
+
+.jumbotron {
+	height: 250px;
+	text-align: center;
+	background: url('../images/rps.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#username {
+	width: 300px;
+}
+
+.form-username {
+	left: 50%;
+	top: 50%;
+}
