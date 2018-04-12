@@ -69,6 +69,8 @@ $("#start").on("click", function() {
 
   username = $("#username").val().trim();
   $("#username").val('')
+  $("#username").hide()
+  $("#start").hide()
 
   $('#turn-sign').html('<p> Now choose your weapon and wait for your opponent to select theirs!')
 
@@ -176,7 +178,7 @@ dbPlayers.on("child_changed", function(snapshot) {
     var dbScoreW = snapshot.val().wins
     var dbScoreL = snapshot.val().losses
 
-    $('#game-stats').html('<p> Your wins: ' + dbScoreW + '<br> Your Losses: ' + dbScoreL + '</p>')
+    $('#game-stats').html('<p> Your wins: ' + dbScoreW + '<br> Your losses: ' + dbScoreL + '</p>')
   }
 
   //function to handle the wins push to the db
